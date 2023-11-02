@@ -1,0 +1,15 @@
+{
+  "generator-ui5-app": {
+    "namespace": "com.rc",
+    "framework": "SAPUI5",
+    "frameworkVersion": "1.120.0",
+    "author": "62Umut19",
+    "initrepo": true,
+    "appId": "com.rc",
+    "appURI": "com/rc",
+    "cdnDomain": "ui5.sap.com",
+    "defaultTheme": "sap_horizon",
+    "qunitCoverageFile": "qunit-coverage-istanbul.js",
+    "setupCompleted": true
+  }
+}
