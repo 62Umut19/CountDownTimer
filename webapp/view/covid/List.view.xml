@@ -1,0 +1,24 @@
+<mvc:View controllerName="com.rc.controller.covid.List" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:layout ="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns:core="sap.ui.core"
+    height="100%">
+    <Page id ="covidList" showHeader="false">
+  
+        <List
+            id="myList"
+            mode="MultiSelect"
+            headerText="Total Cases {Latest>/data/summary/total}"
+            footerText="Latest Covid Count"
+            items="{Latest>/data/regional}">
+            <items>
+                <StandardListItem
+                    title="{Latest>loc}"
+                    description="Total cases {Latest>totalConfirmed}"
+                    info="Deaths {Latest>deaths}"/>
+            </items>
+        </List>
+    </Page>
+</mvc:View>

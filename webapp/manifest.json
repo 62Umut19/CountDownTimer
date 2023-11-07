@@ -73,6 +73,26 @@
 					"pattern": "first",
 					"name": "first",
 					"target": "Countdown"
+				},
+				{
+					"pattern": "second",
+					"name": "second",
+					"target": "Covid"
+				},
+				{
+					"pattern": "second-list",
+					"name": "second-list",
+					"target": "Covid-List"
+				},
+				{
+					"pattern": "second-pie",
+					"name": "second-pie",
+					"target": "Covid-Pie"
+				},
+				{
+					"pattern": "third",
+					"name": "third",
+					"target": "Vacc"
 				}
 			],
 			"targets": {
@@ -83,6 +103,22 @@
 				"Countdown": {
 					"viewId": "countdown.Countdown",
 					"viewName": "countdown.Countdown"
+				},
+				"Covid": {
+					"viewId": "covid.Covid",
+					"viewName": "covid.Covid"
+				},
+				"Covid-List": {
+					"viewId": "covid.List",
+					"viewName": "covid.List"
+				},
+				"Covid-Pie": {
+					"viewId": "covid.Pie",
+					"viewName": "covid.Pie"
+				},
+				"Vacc": {
+					"viewId": "vacc.Vacc",
+					"viewName": "vacc.Vacc"
 				}
 			}
 		}
