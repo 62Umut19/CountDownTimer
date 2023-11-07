@@ -68,12 +68,21 @@
 					"pattern": "",
 					"name": "main",
 					"target": "main"
+				},
+				{
+					"pattern": "first",
+					"name": "first",
+					"target": "Countdown"
 				}
 			],
 			"targets": {
 				"main": {
 					"viewId": "main",
 					"viewName": "Main"
+				},
+				"Countdown": {
+					"viewId": "countdown.Countdown",
+					"viewName": "countdown.Countdown"
 				}
 			}
 		}

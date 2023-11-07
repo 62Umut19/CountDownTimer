@@ -1,0 +1,47 @@
+<mvc:View
+	controllerName="com.rc.controller.countdown.Countdown"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:grid="sap.ui.layout.cssgrid"
+	>
+	<Page id="countdownPage" showHeader="false">
+        <grid:CSSGrid
+			id="grid1"
+			gridTemplateColumns="1fr"
+			gridGap="1rem">
+			<Image src="https://upload.wikimedia.org/wikipedia/commons/8/8f/SAP-Logo.svg"/>
+			
+            <grid:CSSGrid
+			    id="grid2"
+			    gridTemplateColumns="1fr 1fr 1fr 1fr"
+			    gridGap="1rem">
+
+                    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Days"  press="press">
+                        <TileContent >
+                            <NumericContent value="{timer>/days}" valueColor="Critical" withMargin="false" />
+                        </TileContent>
+                    </GenericTile>
+                    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Hours"  press="press">
+                        <TileContent >
+                            <NumericContent value="{timer>/hours}" valueColor="Error" withMargin="false" />
+                        </TileContent>
+                    </GenericTile>
+                    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Minutes"  press="press">
+                        <TileContent >
+                            <NumericContent value="{timer>/minutes}" valueColor="Good" withMargin="false" />
+                        </TileContent>
+                    </GenericTile>
+                    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Seconds"  press="press">
+                        <TileContent >
+                            <NumericContent value="{timer>/seconds}" valueColor="None" withMargin="false" />
+                        </TileContent>
+                    </GenericTile>
+
+            </grid:CSSGrid>
+		
+        </grid:CSSGrid>
+    </Page>
+</mvc:View>
